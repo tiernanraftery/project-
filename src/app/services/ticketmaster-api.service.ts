@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class TicketmasterApiService  {
 
   constructor(private httpClient:HttpClient) { }
-
+//bring in the API
   GetTicketData():Observable<any>{
     return this.httpClient.get('https://app.ticketmaster.com/discovery/v2/events.json?apikey=uBU6RC42ILrlMnEIp2Vu9DPXqs0b5Xgh')
   }
