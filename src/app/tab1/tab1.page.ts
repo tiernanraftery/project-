@@ -17,7 +17,9 @@ import { Router } from '@angular/router';
     IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton,IonImg],
 })
 export class Tab1Page implements OnInit {
+  // store the tickets and images details fetched from the Ticketmaster API.
   tickets:any = [];
+  //images doesnt seem to be working 
   images:any = [];
 
   constructor(private ticketService:TicketmasterApiService, private router:Router) {
@@ -35,6 +37,8 @@ ngOnInit(): void {
       this.tickets = data._embedded.events;
     }
   );
+
+  //subscribe from the data of ticketdata
   this.ticketService.GetTicketData().subscribe(
     (data2)=>{
       this.images = data2._embedded.events.images;
