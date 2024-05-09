@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+//add imports
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, 
   IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonImg } from '@ionic/angular/standalone';
 import { TicketmasterApiService } from '../services/ticketmaster-api.service';
