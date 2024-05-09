@@ -20,6 +20,7 @@
     <ion-card *ngFor="let ticket of tickets">
       <ion-card-header>
         <img *ngFor="let image of images" src={{images.ratio.url}} /><!--pictures wont work, no clue why they wont-->
+        //the ticket.name brings the information from the API and displays it on the app
         <ion-card-title>{{ticket.name}}</ion-card-title>
         <ion-card-subtitle>{{ticket.genre}}</ion-card-subtitle>
       </ion-card-header>
